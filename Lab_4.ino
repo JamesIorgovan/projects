@@ -31,15 +31,13 @@ void myDisplay(String var){
 }
 
 void loop(){
-  
   brightness = analogRead(photoResistor);   // read in unput
   displayValue(brightness);
   delay(100);
 }
 
 void displayValue(int brightness){
-  
-  if(brightness <= 300){
+    if(brightness <= 300){
     myDisplay("dark");
   }
   
