@@ -30,19 +30,11 @@ void myDisplay(String var){
   lcd.print(var);
 }
 
-/*void myDisplay2(int var1){
-  lcd.clear();
-  lcd.print(var1);
-  delay(200);
-}
-*/
 void loop(){
   
   brightness = analogRead(photoResistor);   // read in unput
- // myDisplay2(brightness);
   displayValue(brightness);
   delay(100);
-  //lcd.clear();
 }
 
 void displayValue(int brightness){
@@ -66,6 +58,4 @@ void displayValue(int brightness){
   else if(brightness <= 620){
     myDisplay("fully lit");
   }
-
-  //myDisplay2(brightness);
 }
