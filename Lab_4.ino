@@ -9,8 +9,6 @@
 //                           "https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/"
 //                           "http://learn.adafruit.com/photocells"
 //                            Lab 3
-
-
 // include the library code:
 #include <LiquidCrystal.h>
 
@@ -20,24 +18,28 @@ const int photoResistor = A0, firstLine;
 int brightness = 0, value = 0;
 
 void setup(){
+  
   lcd.begin(16, 2);
   pinMode(photoResistor, INPUT);
   Serial.begin(9600);
 }
 
 void myDisplay(String var){
+  
   lcd.clear();
   lcd.print(var);
 }
 
 void loop(){
+  
   brightness = analogRead(photoResistor);   // read in unput
   displayValue(brightness);
   delay(100);
 }
 
 void displayValue(int brightness){
-    if(brightness <= 300){
+    
+  if(brightness <= 300){
     myDisplay("dark");
   }
   
