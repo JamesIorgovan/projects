@@ -11,7 +11,6 @@
 // include the library code:
 #include <LiquidCrystal.h>
 
-
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 String quote = "Why does Amanda do that";
@@ -42,10 +41,9 @@ int q = quote.length();
 
     lcd.setCursor(0,1);
     lcd.print(&quote[positionCounter]); // call address of quote instead of just one character
-
     
     delay(200);
-   lcd.clear();
+    lcd.clear();
     
   }
 }
