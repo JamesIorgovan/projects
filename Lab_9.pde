@@ -52,3 +52,5 @@
       inByte = map(inByte, 0, 1023, 0, height);
     }
   }
+
+Resourse: https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing#introduction
