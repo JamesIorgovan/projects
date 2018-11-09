@@ -1,5 +1,3 @@
-
-
   import processing.serial.*;
 
   Serial myPort;        // The serial port
